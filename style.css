@@ -13,7 +13,7 @@ a { color: inherit; text-decoration: none; }
 .talk-btn:hover { background: rgb(58, 58, 58); transform: translateY(-2px); }
 .menu-btn { display: none; border: 0px; background: transparent; color: rgb(255, 255, 255); font-size: 20px; cursor: pointer; }
 .container {width: min(1030px, 100% - 40px);margin: 0px auto;}
-.grid { display: grid; gap: 16px; }
+.grid {display: grid;gap: 16px;}
 .top-grid {grid-template-columns: 1.42fr 1fr;margin-bottom: 16px;}
 .card { position: relative; overflow: hidden; background: linear-gradient(145deg, rgb(29, 29, 29), rgb(23, 23, 23)); border: 1px solid var(--border); border-radius: 23px; box-shadow: rgba(255, 255, 255, 0.016) 0px 1px 0px inset; transition: transform 0.25s, border-color 0.25s; }
 .card:hover {/* transform: translateY(-3px); */border-color: rgba(255, 255, 255, 0.1);}
@@ -31,7 +31,7 @@ a { color: inherit; text-decoration: none; }
   opacity: 1
 }
 .right-top { display: flex; flex-direction: column; gap: 16px; }
-.ticker { height: 42px; border-radius: 23px; background: rgb(24, 24, 24); border: 1px solid var(--border); overflow: hidden; display: flex; align-items: center; white-space: nowrap; }
+.ticker {height: 42px;border-radius: 23px;background: rgb(24, 24, 24);border: 1px solid var(--border);overflow: hidden;display: flex;align-items: center;white-space: nowrap;}
 .ticker-track {display: flex;gap: 10px;padding-left: 18px;animation: 18s linear 0s infinite normal none running ticker;color: rgb(119, 119, 119);font-size: 10px;}
 .ticker-track span span{
   color:#FFF
@@ -41,15 +41,15 @@ a { color: inherit; text-decoration: none; }
   0% { transform: translateX(0px); }
   100% { transform: translateX(-30%); }
 }
-.mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; flex: 1 1 0%; }
+.mini-grid {display: grid;/* grid-template-columns: 1fr 1fr; */gap: 16px;flex: 1 1 0%;}
 .mini-card { min-height: 165px; padding: 21px 18px; }
 .mini-card:hover .circle-arrow img { opacity: 1; }
 .mini-card h2, .blog-card h2, .services-card h2, .profiles-card h2 { font-size: 15px; letter-spacing: -0.5px; margin-top: 9px; }
 .signature-placeholder { height: 82px; display: grid; place-items: center; color: rgb(153, 153, 153); font-size: 17px; font-family: cursive; opacity: 0.75; margin-bottom: 10px; }
 .signature-placeholder img { width: 100%; max-height: 100%; height: 82px; }
 .work-image {width: 100%;height: 112px;margin-bottom: 10px;border-radius: 10px;background: rgb(37, 37, 37);}
-.middle-grid { grid-template-columns: 0.72fr 0.72fr; margin-bottom: 16px; }
-.services-card, .profiles-card { min-height: 155px; padding: 20px 18px; }
+.middle-grid {grid-template-columns: 0.72fr 0.72fr;margin-bottom: 16px;}
+.services-card, .profiles-card {min-height: 155px;padding: 20px 18px;}
 .logo-placeholder { width: 100%; height: 85px; display: grid; place-items: center; margin-bottom: 8px; }
 .logo-placeholder img { width: 105px; height: 75px; object-fit: contain; opacity: 0; }
 .logo-placeholder::after { content: "YOUR LOGO"; position: absolute; top: 38px; left: 50%; transform: translateX(-50%); font-size: 11px; color: rgb(85, 85, 85); }
@@ -78,10 +78,10 @@ a { color: inherit; text-decoration: none; }
 .footer p span { color: var(--blue); }
 @media (max-width: 850px) {
   .header { margin-bottom: 25px; }
-  .top-grid, .middle-grid, .bottom-grid { grid-template-columns: 1fr; }
+  .top-grid, .middle-grid, .bottom-grid {grid-template-columns: 1fr;}
   .hero-card { min-height: 220px; }
   .right-top { min-height: 350px; }
-  .middle-grid .card { min-height: 170px; }
+  .middle-grid .card {min-height: 170px;}
   .bottom-grid .card { min-height: 180px; }
 }
 @media (max-width: 600px) {
@@ -92,7 +92,8 @@ a { color: inherit; text-decoration: none; }
   .hero-card { padding: 24px; gap: 16px; }
   .hero-image { width: 125px; height: 125px; flex-basis: 125px; }
   .hero-content h1 { font-size: 23px; }
-  .mini-grid { grid-template-columns: 1fr 1fr; }
+  .mini-grid {grid-template-columns: 1fr;}
+.ticker {white-space: unset;}
   .stats-card { padding: 12px; gap: 8px; }
   .stat strong { font-size: 20px; }
   .cta-card h2 { font-size: 25px; }
