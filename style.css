@@ -20,7 +20,7 @@ a { color: inherit; text-decoration: none; }
 .hero-card { min-height: 247px; padding: 37px; display: flex; align-items: center; gap: 22px; }
 .image-placeholder {overflow: hidden;}
 .hero-image {flex: 0 0 170px;overflow: hidden;width: 170px;height: 100%;border-radius: 23px;}
-.image-placeholder img, .logo-placeholder img, .work-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.image-placeholder img, .logo-placeholder img, .work-image img {width: 100%;height: 100%;object-fit: contain;display: block;}
 .hero-content .eyebrow { margin-bottom: 5px; }
 .eyebrow { display: block; color: rgb(115, 115, 115); font-size: 9px; font-weight: 500; letter-spacing: 0.1px; }
 .hero-content h1 { font-size: 27px; line-height: 1.1; letter-spacing: -1.2px; margin-bottom: 10px; }
@@ -47,7 +47,7 @@ a { color: inherit; text-decoration: none; }
 .mini-card h2, .blog-card h2, .services-card h2, .profiles-card h2 { font-size: 15px; letter-spacing: -0.5px; margin-top: 9px; }
 .signature-placeholder { height: 82px; display: grid; place-items: center; color: rgb(153, 153, 153); font-size: 17px; font-family: cursive; opacity: 0.75; margin-bottom: 10px; }
 .signature-placeholder img { width: 100%; max-height: 100%; height: 82px; }
-.work-image { width: 100%; height: 82px; margin-bottom: 10px; border-radius: 10px; background: rgb(37, 37, 37); }
+.work-image {width: 100%;height: 112px;margin-bottom: 10px;border-radius: 10px;background: rgb(37, 37, 37);}
 .middle-grid { grid-template-columns: 0.72fr 0.72fr; margin-bottom: 16px; }
 .services-card, .profiles-card { min-height: 155px; padding: 20px 18px; }
 .logo-placeholder { width: 100%; height: 85px; display: grid; place-items: center; margin-bottom: 8px; }
