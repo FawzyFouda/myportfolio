@@ -20,7 +20,7 @@ a { color: inherit; text-decoration: none; }
 .hero-card { min-height: 247px; padding: 37px; display: flex; align-items: center; gap: 22px; }
 .image-placeholder {overflow: hidden;}
 .hero-image {flex: 0 0 170px;overflow: hidden;width: 170px;height: 100%;border-radius: 23px;}
-.image-placeholder img, .logo-placeholder img, .work-image img {width: 100%;height: 100%;object-fit: contain;display: block;}
+.image-placeholder img, .logo-placeholder img, .work-image img {width: 100%;height: 100%;object-fit: cover;display: block;}
 .hero-content .eyebrow { margin-bottom: 5px; }
 .eyebrow { display: block; color: rgb(115, 115, 115); font-size: 9px; font-weight: 500; letter-spacing: 0.1px; }
 .hero-content h1 { font-size: 27px; line-height: 1.1; letter-spacing: -1.2px; margin-bottom: 10px; }
