@@ -142,20 +142,6 @@ a {
   object-fit: cover;
 }
 
-.project-image::before {
-  content: "PROJECT IMAGE";
-  position: absolute;
-  inset: 12px 12px auto 12px;
-  height: 211px;
-  border-radius: 17px;
-  display: grid;
-  place-items: center;
-  color: #777;
-  font-size: 9px;
-  letter-spacing: 1px;
-  pointer-events: none;
-}
-
 .project-info {
   padding: 25px 0 2px;
 }
