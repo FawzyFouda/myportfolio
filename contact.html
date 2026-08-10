@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fawzy Fouda — Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo"><img src="assets/signature.png" alt=""></a>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="works.html">Works</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+
+  <a href="contact.html" class="talk-btn">Let's talk</a>
+
+  <button class="menu-btn" aria-label="Open menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</header>
+
+<main class="container">
+
+  <section class="contact-layout">
+
+    <!-- CONTACT INFO -->
+    <aside class="contact-sidebar">
+
+      <h2 class="section-title">CONTACT INFO</h2>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="contact-text">
+          <span>MAIL US</span>
+          <a href="mailto:fawzy.fooda00@email.com">fawzy.fooda00@email.com</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="contact-text">
+          <span>CONTACT US</span>
+          <a href="tel:+200000000000">+20 112 219 3224</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="contact-text">
+          <span>LOCATION</span>
+          <strong>Egypt</strong>
+          <strong>Mansoura, Egypt</strong>
+        </div>
+      </div>
+
+      <h2 class="section-title social-title">SOCIAL INFO</h2>
+
+      <div class="social-box">
+          <span><a href="https://www.facebook.com/fawzy.foda.3" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></span>
+          <span><a href="https://www.linkedin.com/in/fawzy-fouda-53b5b3207" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></span>
+          <span><a href="https://github.com/FawzyFouda" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+        </div>
+
+    </aside>
+
+    <!-- CONTACT FORM -->
+    <section class="form-card">
+
+      <div class="form-sparkle">✧</div>
+
+      <h1>Let’s work <span>together.</span></h1>
+
+      <form id="contactForm">
+
+        <div class="input-group">
+          <input type="text" id="name" name="name" placeholder="Name *" required>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" name="email" placeholder="Email *" required>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="subject" name="subject" placeholder="Your Subject *" required>
+        </div>
+
+        <div class="input-group">
+          <textarea id="message" name="message" placeholder="Your Message *" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Send Message
+        </button>
+
+        <p class="form-status" id="formStatus"></p>
+
+      </form>
+    </section>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-logo"><img src="assets/signature.png" alt="signature.png"></div>
+
+  <nav class="footer-nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="works.html">WORKS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <p>© All rights reserved by <span>Fawzy Fouda</span></p>
+</footer>
+
+<script>
+  const menuBtn = document.querySelector(".menu-btn");
+
+  menuBtn?.addEventListener("click", () => {
+    document.querySelector(".nav")?.classList.toggle("mobile-open");
+  });
+
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("formStatus");
+
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    status.textContent = "Message form is ready. Connect it to your backend or email service.";
+    form.reset();
+  });
+</script>
+
+</body>
+</html>

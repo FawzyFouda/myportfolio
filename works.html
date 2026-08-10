@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fawzy Fouda — Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="works.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo"><img src="assets/signature.png" alt=""></a>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="works.html">Works</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="contact.html" class="talk-btn">Let's talk</a>
+
+  <button class="menu-btn" aria-label="Open menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</header>
+
+<main class="container">
+
+  <section class="works-layout">
+
+    <!-- Left column -->
+    <div class="left-column">
+
+      <article class="project-card card project-large">
+        <a href="https://fawzyfouda.github.io/coffee/" target="_blank" class="project-image image-placeholder">
+          <img src="assets/p1.PNG" alt="Project 01">
+        </a>
+        <div class="project-info">
+          <span>FULL-STACK DEVELOPMENT</span>
+          <h2>Project One</h2>
+        </div>
+        <span class="circle-arrow"><img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star"></span>
+      </article>
+
+      <article class="project-card card project-large second-left">
+        <a href="#" class="project-image image-placeholder">
+          <img src="assets/project-04.jpg" alt="Project 04">
+        </a>
+        <div class="project-info">
+          <span>FRONTEND DEVELOPMENT</span>
+          <h2>Project Four</h2>
+        </div>
+        <span class="circle-arrow"><img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star"></span>
+      </article>
+
+    </div>
+
+    <!-- Right side -->
+    <div class="right-column">
+
+      <h1 class="page-title">
+        <span>✳</span> ALL PROJECTS <span>✳</span>
+      </h1>
+
+      <div class="projects-grid">
+
+        <article class="project-card card">
+          <a href="https://fawzyfouda.github.io/resturant-sarab/" target="_blank" class="project-image image-placeholder">
+            <img src="assets/p2.PNG" alt="Project 02">
+          </a>
+          <div class="project-info">
+            <span>BACKEND &amp; APIs</span>
+            <h2>Project Two</h2>
+          </div>
+          <span class="circle-arrow"><img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star"></span>
+        </article>
+
+        <article class="project-card card">
+          <a href="https://fawzyfouda.github.io/perfume/" target="_blank" class="project-image image-placeholder">
+            <img src="assets/p3.PNG" alt="Project 03">
+          </a>
+          <div class="project-info">
+            <span>UI / UX IMPLEMENTATION</span>
+            <h2>Project Three</h2>
+          </div>
+          <span class="circle-arrow"><img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star"></span>
+        </article>
+
+        <article class="project-card card">
+          <a href="#" class="project-image image-placeholder">
+            <img src="assets/project-05.jpg" alt="Project 05">
+          </a>
+          <div class="project-info">
+            <span>FULL-STACK DEVELOPMENT</span>
+            <h2>Project Five</h2>
+          </div>
+          <span class="circle-arrow"><img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star"></span>
+        </article>
+
+        <article class="project-card card">
+          <a href="#" class="project-image image-placeholder">
+            <img src="assets/project-06.jpg" alt="Project 06">
+          </a>
+          <div class="project-info">
+            <span>DATABASE &amp; SYSTEMS</span>
+            <h2>Project Six</h2>
+          </div>
+          <span class="circle-arrow"><img decoding="async" src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="Star"></span>
+        </article>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-logo"><img src="assets/signature.png" alt="signature.png"></div>
+
+  <nav class="footer-nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="works.html">WORKS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+ <p>© All rights reserved by <span>Fawzy Fouda</span></p>
+</footer>
+
+<script>
+  const menuBtn = document.querySelector(".menu-btn");
+  menuBtn?.addEventListener("click", () => {
+    document.querySelector(".nav")?.classList.toggle("mobile-open");
+  });
+</script>
+
+</body>
+</html>

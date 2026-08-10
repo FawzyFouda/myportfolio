@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #101010;
+  --card: #191919;
+  --text: #f5f5f5;
+  --muted: #737373;
+  --blue: #5f86ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.logo,
+.footer-logo {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 34px;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #fff;
+}
+
+.talk-btn {
+  background: #303030;
+  padding: 10px 23px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.menu-btn {
+  display: none;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.works-layout {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 28px;
+}
+
+.right-column {
+  min-width: 0;
+}
+
+.page-title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  white-space: nowrap;
+  font-size: 74px;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.page-title span {
+  color: #777;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1d1d1d, #171717);
+  border: 1px solid rgba(255,255,255,.045);
+  border-radius: 21px;
+  transition: .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255,255,255,.1);
+}
+
+.project-card {
+  padding: 12px 12px 40px 12px;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 211px;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-image::before {
+  content: "PROJECT IMAGE";
+  position: absolute;
+  inset: 12px 12px auto 12px;
+  height: 211px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+.project-info {
+  padding: 25px 0 2px;
+}
+
+.project-info span {
+  display: block;
+  color: #737373;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.project-info h2 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -.4px;
+}
+
+.circle-arrow {
+  position: absolute;
+  right: 13px;
+  bottom: 50px;
+  width: 40px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  color: #666;
+  font-size: 10px;
+  transition: .25s ease;
+}
+
+.card:hover .circle-arrow img{
+  opacity:1
+}
+
+.project-large .project-image {
+  height: 210px;
+}
+
+.second-left .project-image {
+  height: 291px;
+}
+
+.second-left .project-image::before {
+  height: 291px;
+}
+
+.footer {
+  width: min(860px, calc(100% - 40px));
+  margin: 94px auto 45px;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  margin-bottom: 28px;
+}
+
+
+@media (max-width: 850px) {
+  .works-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .left-column {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .page-title {
+    order: -1;
+  }
+
+  .project-large .project-image,
+  .second-left .project-image {
+    height: 250px;
+  }
+
+  .project-large .project-image::before,
+  .second-left .project-image::before {
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header,
+  .works-container,
+  .footer {
+    width: calc(100% - 24px);
+  }
+
+  .nav,
+  .talk-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .page-title {
+    height: auto;
+    margin: 20px 0;
+    font-size: 27px;
+    letter-spacing: -1.5px;
+  }
+
+  .page-title span {
+    font-size: 21px;
+  }
+
+  .projects-grid,
+  .left-column {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image,
+  .project-large .project-image,
+  .second-left .project-image {
+    height: 250px;
+  }
+
+  .project-image::before,
+  .project-large .project-image::before,
+  .second-left .project-image::before {
+    height: 250px;
+  }
+
+  .footer {
+    margin-top: 65px;
+  }
+}
